@@ -5,6 +5,7 @@ import Time from "./Utlis/Time"
 import Camera from "./Camera"
 import Renderer from "./Renderer"
 import World from "./World/World"
+import Debug from "./Utlis/Debug"
 import Resource from "./Utlis/Resources"
 import sourcess from "./sourcess"
 let instance = null
@@ -16,6 +17,7 @@ export default class Experience {
         //global access
         window.experience = this
         this.canvas = canvas
+        this.debug = new Debug()
         //sizes resize event
         this.sizes = new Sizes()
         this.time = new Time()
