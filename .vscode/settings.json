@@ -5,6 +5,19 @@
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true,
-        "**/Thumbs.db": true
+        "**/Thumbs.db": true,
+        "[!s]*/**": true,
+        "s[!r]*/**": true,
+        "sr[!c]*/**": true,
+        "src/[!E]*/**": true,
+        "src/E[!x]*/**": true,
+        "src/Ex[!p]*/**": true,
+        "src/Exp[!e]*/**": true,
+        "src/Expe[!r]*/**": true,
+        "src/Exper[!i]*/**": true,
+        "src/Experi[!e]*/**": true,
+        "src/Experie[!n]*/**": true,
+        "src/Experien[!c]*/**": true,
+        "src/Experienc[!e]*/**": true
     }
 }
