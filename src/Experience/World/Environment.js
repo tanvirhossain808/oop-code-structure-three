@@ -14,13 +14,15 @@ export default class Environment {
         this.sunLight.shadow.camera.far = 15
         this.sunLight.shadow.mapSize.set(1024, 1024)
         this.sunLight.shadow.normalBias = 0.05
-        // this.sunLight.position.set(3.5, 2, - 1.25)
+        this.sunLight.position.set(3.5, 2, - 1.25)
+        // this.sunLight.position.x = 1
         this.scene.add(this.sunLight)
     }
     setEnvironmentMap() {
         this.environmentMap = {}
         this.environmentMap.intensity = .4
         this.environmentMap.texture = this.resources.items.environmentMapTexture
+        // console.log(this.resources.items.environmentMapTexture);
         this.environmentMap.texture.encoding = THREE.sRGBEncoding
         this.scene.environment = this.environmentMap.texture
 
