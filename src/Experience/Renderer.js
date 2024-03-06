@@ -18,7 +18,6 @@ export default class Renderer {
                 antialias: true
             }
         )
-        console.log(this.instance)
         this.instance.physicallyCorrectLights = true
         this.instance.outputEncoding = THREE.sRGBEncoding
         this.instance.toneMapping = THREE.CineonToneMapping
