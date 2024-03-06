@@ -1,7 +1,6 @@
 import * as THREE from "three"
 import Experience from "../Experience";
 import Time from "../Utlis/Time";
-import Debug from "../Utlis/Debug";
 
 export default class Fox {
     constructor() {
@@ -10,7 +9,7 @@ export default class Fox {
         this.resources = this.experiences.resources
         this.resource = this.resources.items.foxModel
         this.time = new Time()
-        this.debug = new Debug()
+        this.debug = this.experiences.debug
         this.setModel()
         if (this.debug.active) {
             this.debugFolder = this.debug.ui.addFolder("Fox")
